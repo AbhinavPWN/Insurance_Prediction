@@ -19,10 +19,6 @@ def calculate():
     smoker = request.form['smoker']
     region = request.form['region']
     
-    
-    insurance_df = pickle.load(open('insurance.pkl','rb'))
-    X = pickle.load(open('X.pkl','rb'))
-    Y = pickle.load(open('Y.pkl','rb'))
     model1 = pickle.load(open('model1.pkl','rb'))
 
     if sex == 'male':
